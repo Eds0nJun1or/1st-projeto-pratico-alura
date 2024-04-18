@@ -1,0 +1,23 @@
+## Integração com Cron Jobs:
+
+#
+    0 1 * * * /usr/bin/python3/caminho/para/script_backup.py
+    0 2 * * * /usr/bin/python3/caminho/para/script_limpeza_temporarios.py
+    0 3 * * * /usr/bin/python3/caminho/para/script_monitoramento_disco.py
+### Isso agendará a execução dos scripts de backup, limpeza de temporários e monitoramento de disco para 1h, 2h e 3h da manhã, respectivamente, todos os dias. Certifique-se de substituir "/caminho/para/" pelos caminhos reais dos seus scripts.
+
+# 
+    _/5 _ * * * /usr/bin/python3/caminho/para/script_monitoramento_recursos.py
+### Agendar a execução a cada 5 minutos
+
+#
+    0 3 * * * /usr/bin/python3/caminho/para/script_verificar_corrigir_permissoes.py
+### Agendar a execução diária às 3 da manhã
+
+#
+    0 2 * * * /usr/bin/python3/caminho/para/script_atualizar_pacotes.py
+### Agendar a execução semanalmente às segundas-feiras às 2 da manhã
+
+#
+    0 8 * * * /usr/bin/python3/caminho/para/script_notificacao_email.py
+### Agendar a execução diária às 8 da manhã
